@@ -1,0 +1,166 @@
+{
+  "info": {
+    "_postman_id": "ffbe8969-4c92-4ec7-ade1-f4b7889330b0",
+    "name": "Vuelo",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "53625246",
+    "_collection_link": "https://go.postman.co/collection/53625246-ffbe8969-4c92-4ec7-ade1-f4b7889330b0?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Insertar  un vuelo",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"codigo\": \"LA-789\",\r\n  \"precioBoleto\": 195.00,\r\n  \"asientosDisponibles\": 12\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/vuelos",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "vuelos"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Listar todos los vuelos",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"codigo\": \"LA-789\",\r\n  \"precioBoleto\": 195.00,\r\n  \"asientosDisponibles\": 12\r\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/vuelos",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "vuelos"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Actualizar un Vuelo",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"codigo\": \"LA-789\",\r\n  \"precioBoleto\": 210.00,\r\n  \"asientosDisponibles\": 10\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/vuelos/25",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "vuelos",
+            "25"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Buscar por ID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/vuelos/25",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "vuelos",
+            "25"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Eliminar vuelo",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/vuelos/25",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "vuelos",
+            "25"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "New Request",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/vuelos/precio-menor?precio=300.00",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "vuelos",
+            "precio-menor"
+          ],
+          "query": [
+            {
+              "key": "precio",
+              "value": "300.00"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
