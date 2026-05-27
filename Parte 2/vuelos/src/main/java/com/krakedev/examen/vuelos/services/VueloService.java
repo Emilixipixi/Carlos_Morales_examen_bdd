@@ -31,6 +31,7 @@ public class VueloService {
             vuelo.setCodigo(vueloDetalles.getCodigo());
             vuelo.setPrecioBoleto(vueloDetalles.getPrecioBoleto());
             vuelo.setAsientosDisponibles(vueloDetalles.getAsientosDisponibles());
+            vuelo.setDestino(vueloDetalles.getDestino()); 
             return vueloRepository.save(vuelo);
         }).orElseThrow(() -> new RuntimeException("Vuelo no encontrado"));
     }

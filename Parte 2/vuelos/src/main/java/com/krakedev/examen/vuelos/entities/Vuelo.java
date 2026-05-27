@@ -19,8 +19,19 @@ public class Vuelo {
 
     @Column(name = "asientos_disponibles", nullable = false)
     private Integer asientosDisponibles;
+    
+    @Column(name = "destino", length = 100)
+    private String destino;
 
-    // --- MÉTODOS GETTERS Y SETTERS MANUALES ---
+    public String getDestino() {
+        return destino;
+    }
+
+    public void setDestino(String destino) {
+        this.destino = destino;
+    }
+
+    
 
     public Long getId() {
         return id;
