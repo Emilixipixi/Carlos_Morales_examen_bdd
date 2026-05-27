@@ -6,14 +6,21 @@ Hola, aquí explico los pasos que seguí para completar la Parte 3 del examen, d
 
 ---
 
+## Parte 2: Evidencia de Funcionamiento (Video)
+
+A continuación se presenta el enlace con la demostración del correcto funcionamiento de la API, ejecutando los métodos GET, POST, PUT y DELETE desde Postman:
+
+* Enlace del video: https://drive.google.com/drive/folders/1rws1UrHNsALAD-_WasBQaJgoan_as4YB?usp=sharing
+
+---
+
 ## Parte 3: Mantenimiento y Extensibilidad (Modificación de Requisitos)
 
 En esta parte el examen pedía agregar el campo 'destino' a los vuelos. Tuvimos que cambiar todo desde la base de datos hasta el código en Java.
 
 ### 1. Cambio en la Base de Datos
-Primero abrí el pgAdmin, le di clic derecho a la base de datos `vuelos_db` y abrí el Query Tool. Ejecuté este comando para crear la nueva columna en la tabla:
+Primero abrí el pgAdmin, le di clic derecho a la base de datos vuelos_db y abrí el Query Tool. Ejecuté este comando para crear la nueva columna en la tabla:
 
-```sql
 ALTER TABLE vuelos ADD COLUMN destino VARCHAR(100);
 
 Luego fui a Eclipse y modifique los siguientes archivos:
